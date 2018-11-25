@@ -1,2 +1,2 @@
 # Deployment
-php artisan violetaskya-flickr:publish
+php artisan violetaskya-photos:publish
