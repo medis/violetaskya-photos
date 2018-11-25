@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/api/flickr', 'VioletaskyaPhotos\Controllers\PhotosController@index')->name('photos');
+Route::get('/api/photos', 'VioletaskyaPhotos\Controllers\PhotosController@index')->name('photos');
