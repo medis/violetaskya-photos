@@ -1,0 +1,38 @@
+{
+    "name": "medis/violetaskya-photos",
+    "description": "Photos functionality for violetaskya.com",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Audrius Bukauskas",
+            "email": "aubuka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VioletaskyaPhotos\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "~5.7.7",
+        "symfony/var-dumper": "^4.1",
+        "jeroen-g/flickr": "^1.0",
+        "spatie/laravel-fractal": "^5.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.7"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VioletaskyaPhotos\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VioletaskyaPhotos\\AppServiceProvider"
+            ]
+        }
+    }
+}
