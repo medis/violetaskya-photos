@@ -18,7 +18,7 @@ class FlickrRepository implements RepositoryInterface
 
     public function __construct()
     {
-        $this->flickr = new Flickr(new FlickerApi(config('flickr.FLICKR_KEY'), 'php_serial'));
+        $this->flickr = new Flickr(new FlickerApi(config('photos.FLICKR_KEY'), 'php_serial'));
     }
 
     /** @inheritdoc */

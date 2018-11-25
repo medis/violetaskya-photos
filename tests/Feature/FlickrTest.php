@@ -17,7 +17,7 @@ class FlickrTest extends FeatureTestCase
     public function it_can_receive_images()
     {
         $response = $this->get(route('photos'))
-            ->assertOk(200);
+            ->assertOk();
 
         $data = $response->json()['data'];
         $this->assertCount(2, $data);
